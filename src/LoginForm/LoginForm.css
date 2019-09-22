@@ -1,0 +1,16 @@
+input, textarea {
+    width: 100%;
+    max-width: 500px;
+}
+
+label {
+    display: block;
+}
+
+.form_section {
+    margin-bottom: 30px;
+}
+
+.hide {
+    display: none;
+}

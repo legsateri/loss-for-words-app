@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    color: #444;
+    text-align: center;
+    line-height: 1.5;
+    min-width: 320px;
+}
+
+p {
+    font-size: 15px;
+}
+
+.content_container, .add_comment {
+    margin-left: 225px;
+}
+
+.prompt_content {
+    margin-top: 100px;
+}

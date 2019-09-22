@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    color: #444;
+    line-height: 1.5;
+    text-align: center;
+}
+
+h1 {
+    font-size: 35px;
+}
+
+h2 {
+    font-size: 25px;
+    margin-bottom: 0px;
+}
+
+ul {
+    list-style: none;
+}
+
+.prompt_list {
+    margin-left: 225px;
+}
+
+.main {
+    padding: 0px 10px;
+  }

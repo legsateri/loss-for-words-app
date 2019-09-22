@@ -1,0 +1,19 @@
+.nav_list {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+}
+
+.nav_options {
+    font-size: 15px;
+}
+
+.navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    background-color: #aaa;
+}
