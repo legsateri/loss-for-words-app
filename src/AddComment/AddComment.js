@@ -1,4 +1,4 @@
-//FIXME: Need to test functionality but can't until prompt page is working.
+//FIXME: Basic setup is up and running, but need to actually get it working.
 
 import React, { Component } from 'react';
 import './AddComment.css';

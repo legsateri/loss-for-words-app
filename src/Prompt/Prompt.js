@@ -9,23 +9,32 @@ import AddComment from '../AddComment/AddComment';
 class Prompt extends React.Component {
     static contextType = AppContext;
 
+    renderComments() {
+        const commentId = parseInt(this.props.match.params.promptId);
+        const comments = this.context.comments;
+        console.log(commentId);
+        console.log(comments);
+
+        for(let i=0; i < comments.length; i++){
+            if (commentId[i] === comments[i].prompt_id) {
+                return (
+                    <>
+                        <li key={comments.i.id} className='comment_list_item'>
+                            <div>
+                                <p>{comments.i.prompt_response}</p>
+                                <p>{comments.i.author}</p>
+                            </div>
+                        </li>
+                    </>
+                )
+            }
+        }
+    }
+
     render() {
         const promptId = parseInt(this.props.match.params.promptId);
         const prompt = this.context.prompts.find(prompt => prompt.id === promptId);
         console.log(prompt.prompt_content);
-
-        const comments = this.context.comments.map(comment => {
-            return (
-                <>
-                    <li key={comment.id} className='comment_list_item'>
-                        <div>
-                            <p>{comment.prompt_response}</p>
-                            <p>{comment.author}</p>
-                        </div>
-                    </li>
-                </>
-            );
-        });
 
         return (
             <>
@@ -40,8 +49,8 @@ class Prompt extends React.Component {
 
                 <section className='add_comment'>
                     <AddComment />
-                    <ul className='view_comments'>
-                        {comments}
+                    <ul className='comment_list'>
+                        {this.renderComments()}
                     </ul>
                 </section>
             </>
