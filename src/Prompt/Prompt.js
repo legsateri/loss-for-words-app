@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom';
 import AppContext from '../AppContext';
 import AddComment from '../AddComment/AddComment';
 
-// FIXME: Add comment section back to the page.
-// FIXME: Add view comments section to the page.
+// FIXME: Only want to view comments associated with their respective prompts.
+
 class Prompt extends React.Component {
     static contextType = AppContext;
 
@@ -13,6 +13,19 @@ class Prompt extends React.Component {
         const promptId = parseInt(this.props.match.params.promptId);
         const prompt = this.context.prompts.find(prompt => prompt.id === promptId);
         console.log(prompt.prompt_content);
+
+        const comments = this.context.comments.map(comment => {
+            return (
+                <>
+                    <li key={comment.id} className='comment_list_item'>
+                        <div>
+                            <p>{comment.prompt_response}</p>
+                            <p>{comment.author}</p>
+                        </div>
+                    </li>
+                </>
+            );
+        });
 
         return (
             <>
@@ -27,6 +40,9 @@ class Prompt extends React.Component {
 
                 <section className='add_comment'>
                     <AddComment />
+                    <ul className='view_comments'>
+                        {comments}
+                    </ul>
                 </section>
             </>
         )

@@ -22,3 +22,7 @@ p {
 .prompt_content {
     margin-top: 100px;
 }
+
+ul {
+    list-style: none;
+}
