@@ -10,22 +10,20 @@ class Prompt extends React.Component {
     static contextType = AppContext;
 
     renderComments() {
-        const commentId = parseInt(this.props.match.params.promptId);
+        const commentPromptId = parseInt(this.props.match.params.promptId);
         const comments = this.context.comments;
-        console.log(commentId);
+        console.log(commentPromptId);
         console.log(comments);
 
-        for(let i=0; i < comments.length; i++){
-            if (commentId[i] === comments[i].prompt_id) {
+        for (let i = 0; i < comments.length; i++) {
+            if (commentPromptId == comments[i].prompt_id) {
                 return (
-                    <>
-                        <li key={comments.i.id} className='comment_list_item'>
-                            <div>
-                                <p>{comments.i.prompt_response}</p>
-                                <p>{comments.i.author}</p>
-                            </div>
-                        </li>
-                    </>
+                    <li key={comments[i].id} className='comment_list_item'>
+                        <div>
+                            <p>{comments[i].prompt_response}</p>
+                            <p>{comments[i].author}</p>
+                        </div>
+                    </li>
                 )
             }
         }
