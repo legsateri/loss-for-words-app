@@ -4,6 +4,5 @@ export default React.createContext({
     prompts: {},
     comments: [],
     addPrompt: () => { },
-    addComment: () => { },
-    commentsToAdd: () => { }
+    addComment: () => { }
 });

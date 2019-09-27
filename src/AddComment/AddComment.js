@@ -5,7 +5,6 @@ import './AddComment.css';
 import AppContext from '../AppContext';
 import ValidationError from '../ValidationError/ValidationError';
 import config from '../config';
-import parse from 'url-parse';
 
 class AddComment extends Component {
     constructor(props) {
@@ -29,9 +28,9 @@ class AddComment extends Component {
     handleSubmitComment(event) {
         event.preventDefault();
         const newComment = {
-            content: this.state.comment.textArea,
+            prompt_response: this.state.comment.textArea,
             author: this.state.comment.name,
-            prompt_id: null,
+            prompt_id: this.state.comment.prompt_id,
             id: this.context.comments.length.toString()
         };
 
@@ -57,6 +56,26 @@ class AddComment extends Component {
             });
     }
 
+    handlePromptId(event) {
+        let currentPath = window.location.pathname
+        console.log(currentPath)
+        let promptId = currentPath.match(/\d+/g).map(Number);
+        console.log(promptId[0])
+
+        this.setState({
+            comment: {
+                prompt_id: promptId[0],
+                textArea: this.state.comment.textArea,
+                name: this.state.comment.name,
+                contentValid: this.state.comment.contentValid,
+                nameValid: this.state.comment.nameValid,
+                formValid: false,
+                validationMessageName: this.state.comment.validationMessageName,
+                validationMessageContent: this.state.comment.validationMessageContent
+            }
+        })
+    }
+
     handleChangeCommentName(event) {
         const input = event.target.value;
         const hasError = this.validateName(input).hasError;
@@ -64,6 +83,7 @@ class AddComment extends Component {
 
         this.setState({
             comment: {
+                prompt_id: this.state.comment.prompt_id,
                 textArea: this.state.comment.textArea,
                 name: input,
                 contentValid: this.state.comment.contentValid,
@@ -83,6 +103,7 @@ class AddComment extends Component {
 
         this.setState({
             comment: {
+                prompt_id: this.state.comment.prompt_id,
                 textArea: input,
                 name: this.state.comment.name,
                 contentValid: !hasError,
@@ -157,9 +178,6 @@ class AddComment extends Component {
     }
 
     render() {
-        let urlObject = url.parse(inUrlString);
-        console.log(urlObject)
-
         return (
             <>
                 <section className='add_comment_section'>
@@ -197,6 +215,7 @@ class AddComment extends Component {
                                 className='submit_prompt_button'
                                 type='submit'
                                 disabled={!this.state.formValid}
+                                onClick={event => this.handlePromptId(event)}
                             >Submit</button>
                         </form>
                     </div>
