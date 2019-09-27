@@ -3,19 +3,23 @@ import './Prompt.css';
 import { Link } from 'react-router-dom';
 import AppContext from '../AppContext';
 import AddComment from '../AddComment/AddComment';
+import { nextTick } from 'q';
 
 class Prompt extends React.Component {
     static contextType = AppContext;
 
-    renderComments() {
+    render() {
+        const promptId = parseInt(this.props.match.params.promptId);
+        const prompt = this.context.prompts.find(prompt => prompt.id === promptId);
+
         const commentPromptId = parseInt(this.props.match.params.promptId);
         const comments = this.context.comments;
-        console.log(commentPromptId);
-        console.log(comments);
+        
+        const promptComment = []
 
         for (let i = 0; i < comments.length; i++) {
             if (commentPromptId === comments[i].prompt_id) {
-                return (
+                promptComment.push(
                     <li key={comments[i].id} className='comment_list_item'>
                         <div>
                             <p>{comments[i].prompt_response}</p>
@@ -25,12 +29,6 @@ class Prompt extends React.Component {
                 )
             }
         }
-    }
-
-    render() {
-        const promptId = parseInt(this.props.match.params.promptId);
-        const prompt = this.context.prompts.find(prompt => prompt.id === promptId);
-        console.log(prompt.prompt_content);
 
         return (
             <>
@@ -46,7 +44,7 @@ class Prompt extends React.Component {
                 <section className='add_comment'>
                     <AddComment />
                     <ul className='comment_list'>
-                        {this.renderComments()}
+                        {promptComment}
                     </ul>
                 </section>
             </>

@@ -1,5 +1,3 @@
-//FIXME: Basic setup is up and running, but need to actually get it working.
-
 import React, { Component } from 'react';
 import './AddComment.css';
 import AppContext from '../AppContext';
@@ -11,6 +9,7 @@ class AddComment extends Component {
         super(props)
         this.state = {
             comment: {
+                id: null,
                 textArea: '',
                 name: '',
                 prompt_id: null,
@@ -27,11 +26,12 @@ class AddComment extends Component {
 
     handleSubmitComment(event) {
         event.preventDefault();
+        const commentId = parseInt(this.context.comments.length)
         const newComment = {
+            id: commentId,
             prompt_response: this.state.comment.textArea,
             author: this.state.comment.name,
-            prompt_id: this.state.comment.prompt_id,
-            id: this.context.comments.length.toString()
+            prompt_id: this.state.comment.prompt_id
         };
 
         fetch(`${config.API_ENDPOINT}/api/comments`, {
@@ -48,22 +48,22 @@ class AddComment extends Component {
                 return response.json();
             })
             .then(responseJson => {
-                this.context.addComment(newComment);
-                this.props.history.goBack();
+                this.context.addComment(this.state.comment);
+                this.props.history.push('/');
             })
             .catch(error => {
                 console.log(error);
             });
     }
 
-    handlePromptId(event) {
+    handlePromptId() {
         let currentPath = window.location.pathname
-        console.log(currentPath)
         let promptId = currentPath.match(/\d+/g).map(Number);
-        console.log(promptId[0])
+        const commentIndex = this.context.comments.length.toString();
 
         this.setState({
             comment: {
+                id: commentIndex,
                 prompt_id: promptId[0],
                 textArea: this.state.comment.textArea,
                 name: this.state.comment.name,
@@ -78,11 +78,13 @@ class AddComment extends Component {
 
     handleChangeCommentName(event) {
         const input = event.target.value;
+        const commentIndex = this.context.comments.length.toString();
         const hasError = this.validateName(input).hasError;
         const inputError = this.validateName(input).inputError;
 
         this.setState({
             comment: {
+                id: commentIndex,
                 prompt_id: this.state.comment.prompt_id,
                 textArea: this.state.comment.textArea,
                 name: input,
@@ -97,12 +99,14 @@ class AddComment extends Component {
     }
 
     handleChangeTextArea(event) {
+        const commentIndex = this.context.comments.length.toString();
         const input = event.target.value;
         const hasError = this.validateTextArea(input).hasError;
         const inputError = this.validateTextArea(input).inputError;
 
         this.setState({
             comment: {
+                id: commentIndex,
                 prompt_id: this.state.comment.prompt_id,
                 textArea: input,
                 name: this.state.comment.name,

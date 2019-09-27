@@ -127,7 +127,7 @@ class App extends React.Component {
                 }} />
             }
             if (path === '/prompts/:promptId') {
-                return <Route key={index} path={path} component={Prompt} />
+                return <Route key={index} exact path={path} component={Prompt} />
             }
         });
     }
