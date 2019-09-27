@@ -24,7 +24,7 @@ class MainPage extends Component {
       );
     });
 
-    const randomPrompt = prompts[Math.floor(Math.random()*prompts.length)];
+    const randomPrompt = prompts[Math.floor(Math.random() * prompts.length)];
 
     return (
       <>
@@ -44,10 +44,7 @@ class MainPage extends Component {
           <p>And if at the end of the day you really like what you had to say, share your words with your peers—you might just have the beginnings of a new story on your hands.</p>
         </section>
 
-        <section>
-          <h3>Time To Start Writing</h3>
-          <SignupForm />
-        </section>
+        {/* TODO: Enable signup/login <section> <h3>Time To Start Writing</h3> <SignupForm /> </section> */}
       </>
     );
   }

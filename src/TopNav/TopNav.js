@@ -11,7 +11,7 @@ class TopNav extends React.Component {
                         <li className="nav_options"><Link to='/'>[Placeholder For Logo]</Link></li>
                         <li className="nav_options"><Link to='/prompts'>Find A Prompt</Link></li>
                         <li className="nav_options"><Link to='/add-prompt'>Create A Prompt</Link></li>
-                        <li className="nav_options"><Link to='/login'>Account</Link></li>
+                        {/* TODO: Enable signup/login <li className="nav_options"> <Link to='/login'> Account </Link> </li> */}
                     </ul>
                 </nav>
             </>

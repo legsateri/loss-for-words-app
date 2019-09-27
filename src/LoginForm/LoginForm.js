@@ -32,7 +32,7 @@ class LoginForm extends React.Component {
                             <label htmlFor="loginPassword">Password</label>
                             <input type="loginPassword" name='loginPassword' id='loginPassword' />
                         </div>
-                        {/* FIXME: Make submit functionality work */}
+                        {/* TODO: Enable signup/login */}
                         <button type='submit'>Login</button>
                     </form>
                 </>

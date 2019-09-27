@@ -23,7 +23,7 @@ class SignupForm extends React.Component {
                         <input type="signupPassword" name='signupPassword' id='signupPassword' />
                     </div>
 
-                    {/* FIXME: Make submit functionality work */}
+                    {/* TODO: Enable signup/login */}
                     <button type='submit'>Sign Up</button>
                 </form>
             </>
