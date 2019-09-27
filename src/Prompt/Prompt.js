@@ -4,8 +4,6 @@ import { Link } from 'react-router-dom';
 import AppContext from '../AppContext';
 import AddComment from '../AddComment/AddComment';
 
-// FIXME: Only want to view comments associated with their respective prompts.
-
 class Prompt extends React.Component {
     static contextType = AppContext;
 
@@ -16,7 +14,7 @@ class Prompt extends React.Component {
         console.log(comments);
 
         for (let i = 0; i < comments.length; i++) {
-            if (commentPromptId == comments[i].prompt_id) {
+            if (commentPromptId === comments[i].prompt_id) {
                 return (
                     <li key={comments[i].id} className='comment_list_item'>
                         <div>

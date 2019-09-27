@@ -5,6 +5,7 @@ import './AddComment.css';
 import AppContext from '../AppContext';
 import ValidationError from '../ValidationError/ValidationError';
 import config from '../config';
+import parse from 'url-parse';
 
 class AddComment extends Component {
     constructor(props) {
@@ -26,12 +27,11 @@ class AddComment extends Component {
     static contextType = AppContext;
 
     handleSubmitComment(event) {
-        const prompt = this.context.prompts.find(prompt => prompt.id === this.state.comment.prompt_id);
         event.preventDefault();
         const newComment = {
             content: this.state.comment.textArea,
             author: this.state.comment.name,
-            prompt_id: prompt.id,
+            prompt_id: null,
             id: this.context.comments.length.toString()
         };
 
@@ -157,6 +157,9 @@ class AddComment extends Component {
     }
 
     render() {
+        let urlObject = url.parse(inUrlString);
+        console.log(urlObject)
+
         return (
             <>
                 <section className='add_comment_section'>

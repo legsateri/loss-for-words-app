@@ -56,6 +56,21 @@ class AddPromptForm extends React.Component {
             .catch(error => {
                 console.log(error)
             });
+        this.setState({
+            prompt: {
+                id: null,
+                textArea: '',
+                option: '',
+                name: '',
+                contentValid: false,
+                optionValid: false,
+                nameValid: false,
+                formValid: false,
+                validationMessageContent: '',
+                validationMessageOption: '',
+                validationMessageName: ''
+            }
+        })
     }
 
     handleSelectOption(option) {

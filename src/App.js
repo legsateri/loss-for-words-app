@@ -120,7 +120,7 @@ class App extends React.Component {
             }
             if (path === '/prompts/:category') {
                 return <Route key={index} path={path} render={routeProps => {
-                    const category = parseInt(routeProps.match.params.category);
+                    const category = routeProps.match.params.category;
                     const selectedPrompts = this.state.prompts.filter(prompt => prompt.category === category);
 
                     return <CategoryList prompts={selectedPrompts} />
@@ -155,7 +155,7 @@ class App extends React.Component {
                         </AppContext.Provider>
                     </NotFound>
                 </main>
-
+                
                 <Footer />
             </>
         );

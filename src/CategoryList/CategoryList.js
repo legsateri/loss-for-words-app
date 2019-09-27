@@ -1,6 +1,7 @@
 // FIXME: Set up component. Will act as a sidebar to filter prompts on prompt list page.
 import React from 'react';
-import './CategoryList.css'
+import './CategoryList.css';
+import config from '../config';
 
 class CategoryList extends React.Component {
     render() {
