@@ -3,6 +3,7 @@ import './Prompt.css';
 import { Link } from 'react-router-dom';
 import AppContext from '../AppContext';
 import AddComment from '../AddComment/AddComment';
+import CategoryList from '../CategoryList/CategoryList';
 
 class Prompt extends React.Component {
     static contextType = AppContext;
@@ -13,7 +14,7 @@ class Prompt extends React.Component {
 
         const commentPromptId = parseInt(this.props.match.params.promptId);
         const comments = this.context.comments;
-        
+
         const promptComment = []
 
         for (let i = 0; i < comments.length; i++) {
@@ -31,6 +32,10 @@ class Prompt extends React.Component {
 
         return (
             <>
+                <section className='sidebar'>
+                    <CategoryList />
+                </section>
+
                 <section className='prompt_align'>
                     <div className='content_container'>
                         <Link to={`/prompts/${promptId}`} className='prompt_link'>
