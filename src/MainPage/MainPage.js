@@ -15,10 +15,10 @@ class MainPage extends Component {
             <h3>{prompt.prompt_content}</h3>
 
             <Link to={`/prompts/${prompt.id}`}>
-              <button>View Prompt</button>
+              <button className='main_page_buttons view_button'>View Prompt</button>
             </Link>
 
-            <Link to='/prompts'><button>See More Prompts</button></Link>
+            <Link to='/prompts'><button className='main_page_buttons'>See More</button></Link>
           </li>
         </>
       );
@@ -39,9 +39,9 @@ class MainPage extends Component {
           </header>
         </section>
 
-        <section>
-          <p> Got writer's block? Get the creative juices flowing with a writing prompt or two. Some are rude, some a crude, but all our prompts have just the right amount of 'tude to get you thinking outside the box.</p>
-          <p>And if at the end of the day you really like what you had to say, share your words with your peers—you might just have the beginnings of a new story on your hands.</p>
+        <section className='site_description'>
+          <p className='para_one'> Got writer's block? Get the creative juices flowing with a writing prompt or two. Some are rude, some a crude, but all our prompts have just the right amount of 'tude to get you thinking outside the box.</p>
+          <p className='para_two'>And if at the end of the day you really like what you had to say, share your words with your peers—you might just have the beginnings of a new story on your hands.</p>
         </section>
 
         {/* TODO: Enable signup/login <section> <h3>Time To Start Writing</h3> <SignupForm /> </section> */}

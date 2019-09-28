@@ -14,13 +14,15 @@ class PromptList extends React.Component {
                 <>
                     <li key={prompt.id} className='prompt_list_item'>
                         <div>
-                            <h2>{prompt.prompt_content}</h2>
-                            <p className='prompt_author'>{prompt.author} <span>{prompt.category}</span></p>
+                            <h2 className='prompt_list_h2'>{prompt.prompt_content}</h2>
+                            <p className='prompt_author'>Submitted By: {prompt.author}</p>
                         </div>
 
                         <Link to={`/prompts/${prompt.id}`}>
-                            <button>View Prompt</button>
+                            <button className='prompt_button'>View Prompt</button>
                         </Link>
+
+                        <p className='prompt_category'>Category: {prompt.category}</p>
                     </li>
                 </>
             );
@@ -37,7 +39,7 @@ class PromptList extends React.Component {
 
                     <section className='prompt_list'>
                         <header role='banner'>
-                            <h1>List O' Prompts</h1>
+                            <h1 className='prompt_list_h1'>List O' Prompts</h1>
                         </header>
 
                         <ul>{prompts}</ul>

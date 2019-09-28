@@ -1,29 +1,66 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
     font-family: "Open Sans", sans-serif;
     font-size: 20px;
     color: #444;
-    text-align: center;
-    line-height: 1.5;
-    min-width: 320px;
 }
 
-h1 {
-    font-size: 35px;
+@media only screen and (min-width: 200px) {
+    .add_prompt_section {
+        text-align: center;
+        margin-top: 100px;
+    }
+    
+    .submit_prompt_button {
+        margin-bottom: 50px;
+        border: 0px;
+        padding: 0px;
+        height: 25px;
+        width: 100px;
+        border-radius: 1px;
+        font-size: 12px;
+        background-color: #ccc;
+        color: black;
+    }
+
+    .input_field {
+        border: 1px solid #aaa;
+        max-width: 300px;
+    }
+
+    .author_field {
+        height: 25px;
+    }
+
+    .text_label {
+        margin-top: 30px;
+    }
+
+    .input_label {
+        font-size: 15px;
+        line-height: 0;
+    }
+
+    .option_field {
+        margin-bottom: 30px;
+        border: 0px;
+        padding: 0px;
+        height: 25px;
+        width: 300px;
+        border-radius: 1px;
+        font-size: 12px;
+        background-color: white;
+        color: black;
+    }
+
+    .dropdown_options {
+        text-align: center;
+    }
 }
 
-p {
-    margin: 0 auto;
-    max-width: 650px;
-}
-
-label {
-    display: block;
-}
-
-.form_section {
-    margin-bottom: 30px;
-}
+@media only screen and (min-width: 750px) {}

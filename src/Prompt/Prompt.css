@@ -1,32 +1,88 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
     font-family: "Open Sans", sans-serif;
     font-size: 20px;
     color: #444;
-    text-align: center;
     line-height: 1.5;
-    min-width: 320px;
 }
 
-p {
-    font-size: 15px;
+@media only screen and (min-width: 200px) {
+    .prompt_content {
+        font-size: 25px;
+        margin-bottom: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .prompt_info {
+        font-size: 18px;
+    }
+
+    .prompt_align, .add_comment {
+        margin-top: 75px;
+        text-align: center;
+    }
+
+    .prompt_button {
+        margin-top: 20px;
+        border: 0px;
+        padding: 0px;
+        height: 25px;
+        width: 100px;
+        border-radius: 1px;
+        font-size: 12px;
+        background-color: #ccc;
+    }
+
+    .prompt_link:link{
+        color: black;
+        text-decoration: none;
+    }
+
+    .prompt_link:visited{
+        color: black;
+        text-decoration: none;
+    }
+
+    .indi_prompt_category {
+        font-style: italic;
+        font-size: 12px;
+        margin-top: 10px;
+        margin-bottom: 75px;
+        color: #aaa;
+    }
+
+    .comment_author {
+        font-size: 12px;
+        margin-bottom: 30px;
+        font-style: italic;
+    }
+
+    .comment_content {
+        font-size: 15px;
+    }
+
+    .comment_list {
+        background-color: #ddd;
+        padding-bottom: 5px;
+        padding-top: 30px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 }
 
-.content_container, .add_comment {
-    margin-left: 225px;
-}
+@media only screen and (min-width: 750px) {
+    .prompt_align, .add_comment {
+        margin-left: 200px;
+        margin-right: 50px;
+    }
 
-.prompt_content {
-    margin-top: 100px;
-}
-
-ul {
-    list-style: none;
-}
-
-.comment_list_item {
-    margin-top: 15px;
+    .indi_prompt_category {
+        font-size: 15px;
+    }
 }

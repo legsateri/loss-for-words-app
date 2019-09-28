@@ -109,12 +109,14 @@ class App extends React.Component {
             if (path === '/add-prompt') {
                 return <Route key={index} path={path} component={AddPromptForm} />
             }
-            if (path === '/account') {
-                return <Route key={index} path={path} component={Account} />
-            }
-            if (path === '/login') {
-                return <Route key={index} path={path} component={LoginForm} />
-            }
+            // TODO: Enable signup/login
+            // if (path === '/account') {
+            //     return <Route key={index} path={path} component={Account} />
+            // }
+            // TODO: Enable signup/login
+            // if (path === '/login') {
+            //     return <Route key={index} path={path} component={LoginForm} />
+            // }
             if (path === '/prompts') {
                 return <Route key={index} exact path={path} component={PromptList} />
             }

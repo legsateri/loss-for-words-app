@@ -1,32 +1,91 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
     font-family: "Open Sans", sans-serif;
     font-size: 20px;
     color: #444;
-    line-height: 1.5;
-    text-align: center;
 }
 
-h1 {
-    font-size: 35px;
+@media only screen and (min-width: 200px) {
+    .prompt_list_h1 {
+        font-size: 25px;
+        margin-bottom: 30px;
+    }
+
+    .prompt_list_h2 {
+        font-size: 18px;
+    }
+
+    .prompt_author {
+        margin-top: 20px;
+        font-size: 13px;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    .prompt_list_item {
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 0;
+        padding-right: 0;
+        border-top: 1px solid #aaa;
+        padding-top: 30px;
+        margin-right: 30px;
+        margin-left: 30px
+    }
+
+    .prompt_list {
+        margin-top: 100px;
+        text-align: center;
+    }
+
+    .prompt_button {
+        margin-top: 20px;
+        border: 0px;
+        padding: 0px;
+        height: 25px;
+        width: 100px;
+        border-radius: 1px;
+        font-size: 12px;
+        background-color: #ccc;
+    }
+
+    .prompt_category {
+        font-style: italic;
+        font-size: 12px;
+        margin-top: 10px;
+        margin-bottom: 30px;
+        color: #aaa;
+    }
 }
 
-h2 {
-    font-size: 25px;
-    margin-bottom: 0px;
-}
+@media only screen and (min-width: 750px) {
+    .prompt_list_h1 {
+        font-size: 35px;
+    }
 
-ul {
-    list-style: none;
-}
+    .prompt_list_h2 {
+        font-size: 25px;
+    }
 
-.prompt_list {
-    margin-left: 225px;
-}
+    .prompt_author {
+        font-size: 18px;
+    }
 
-.main {
-    padding: 0px 10px;
-  }
+    .prompt_list {
+        margin-left: 200px;
+        margin-right: 50px;
+    }
+
+    .prompt_category {
+        font-size: 15px;
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+}

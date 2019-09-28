@@ -1,11 +1,35 @@
-.not_found_h1 {
-    padding-top: 75px;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-.not_found {
-    font-size: 18px;
+body {
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    color: #444;
 }
 
-.not_found_page {
-    height: 350px;
+@media only screen and (min-width: 200px) {
+    .not_found_h1 {
+        padding-top: 100px;
+        font-size: 25px;
+    }
+
+    .not_found_h2 {
+        font-size: 18px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .not_found {
+        font-size: 18px;
+    }
+
+    .not_found_page {
+        text-align: center;
+        margin-right: 30px;
+        margin-left: 30px;
+        margin-bottom: 60px;
+    }
 }

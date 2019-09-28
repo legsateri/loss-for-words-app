@@ -188,10 +188,10 @@ class AddComment extends Component {
                     <h3>What You Have To Say</h3>
                     <div className='add_comment_form'>
                         <form onSubmit={event => this.handleSubmitComment(event)}>
-                            <label className='input_label' htmlFor='content'>Your Response</label>
+                            <label className='input_label text_label' htmlFor='content'>Your Response</label>
                             <br />
                             <textarea
-                                className='input_field'
+                                className='input_field text_field'
                                 required
                                 value={this.state.comment.textArea}
                                 onChange={event => this.handleChangeTextArea(event)}
@@ -201,10 +201,10 @@ class AddComment extends Component {
                                 message={this.state.comment.validationMessageContent} />
                             <br />
 
-                            <label className='input_label' htmlFor='name'>Author or Pseudonym</label>
+                            <label className='input_label' htmlFor='name'>Your Name (Real or Otherwise)</label>
                             <br />
                             <input
-                                className='input_field'
+                                className='input_field author_field'
                                 type='text'
                                 id='name'
                                 name='name'
@@ -216,7 +216,7 @@ class AddComment extends Component {
                             <br />
 
                             <button
-                                className='submit_prompt_button'
+                                className='submit_comment_button'
                                 type='submit'
                                 disabled={!this.state.formValid}
                                 onClick={event => this.handlePromptId(event)}

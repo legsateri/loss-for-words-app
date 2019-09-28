@@ -1,5 +1,15 @@
-footer {
-    padding: 1% 0;
-    font-size: 12px;
-    background-color: #aaa;
+@media only screen and (min-width: 200px) {
+    footer {
+        padding: 1% 0;
+        font-size: 12px;
+        background-color: #aaa;
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 750px) {
+    footer {
+        text-align: right;
+        padding-right: 20px;
+    }
 }

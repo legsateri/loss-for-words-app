@@ -22,8 +22,8 @@ class Prompt extends React.Component {
                 promptComment.push(
                     <li key={comments[i].id} className='comment_list_item'>
                         <div>
-                            <p>{comments[i].prompt_response}</p>
-                            <p>{comments[i].author}</p>
+                            <p className='comment_content'>{comments[i].prompt_response}</p>
+                            <p className='comment_author'>By: {comments[i].author}</p>
                         </div>
                     </li>
                 )
@@ -36,7 +36,7 @@ class Prompt extends React.Component {
                     <div className='content_container'>
                         <Link to={`/prompts/${promptId}`} className='prompt_link'>
                             <h2 className='prompt_content'>{prompt.prompt_content}</h2>
-                            <p className='prompt_info'>{prompt.author}, {prompt.category}</p>
+                            <p className='indi_prompt_category'>{prompt.category}</p>
                         </Link>
                     </div>
                 </section>

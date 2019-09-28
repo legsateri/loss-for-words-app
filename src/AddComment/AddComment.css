@@ -1,0 +1,41 @@
+@media only screen and (min-width: 200px) {
+    .submit_comment_button {
+        margin-bottom: 50px;
+        border: 0px;
+        padding: 0px;
+        height: 25px;
+        width: 100px;
+        border-radius: 1px;
+        font-size: 12px;
+        background-color: #ccc;
+        color: black;
+    }
+
+    .input_field {
+        border: 1px solid #aaa;
+        max-width: 300px;
+    }
+
+    .author_field {
+        height: 25px;
+    }
+
+    .text_label {
+        margin-top: 30px;
+    }
+
+    .input_label {
+        font-size: 15px;
+        line-height: 0;
+    }
+}
+
+@media only screen and (min-width: 750px) {
+    .input_field {
+        max-width: 400px;
+    }
+
+    .author_field {
+        width: 300px;
+    }
+}
