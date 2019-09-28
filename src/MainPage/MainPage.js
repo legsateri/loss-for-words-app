@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import SignupForm from '../SignupForm/SignupForm';
+//import SignupForm from '../SignupForm/SignupForm';
 import AppContext from '../AppContext';
 import './MainPage.css';
 

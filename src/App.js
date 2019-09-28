@@ -5,9 +5,8 @@ import { Route } from 'react-router-dom';
 import Prompt from './Prompt/Prompt';
 import PromptList from './PromptList/PromptList';
 import MainPage from './MainPage/MainPage';
-import Account from './Account/Account';
-import LoginForm from './LoginForm/LoginForm';
-import CategoryList from './CategoryList/CategoryList';
+//import Account from './Account/Account';
+//import LoginForm from './LoginForm/LoginForm';
 import TopNav from './TopNav/TopNav';
 import Footer from './Footer/Footer';
 import config from './config';
@@ -119,14 +118,6 @@ class App extends React.Component {
             // }
             if (path === '/prompts') {
                 return <Route key={index} exact path={path} component={PromptList} />
-            }
-            if (path === '/prompts/:category') {
-                return <Route key={index} path={path} render={routeProps => {
-                    const category = routeProps.match.params.category;
-                    const selectedPrompts = this.state.prompts.filter(prompt => prompt.category === category);
-
-                    return <CategoryList prompts={selectedPrompts} />
-                }} />
             }
             if (path === '/prompts/:promptId') {
                 return <Route key={index} exact path={path} component={Prompt} />

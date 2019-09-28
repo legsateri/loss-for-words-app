@@ -60,8 +60,8 @@ class AddPromptForm extends React.Component {
             prompt: {
                 id: null,
                 textArea: '',
-                option: '',
-                name: '',
+                option: 'Choose One',
+                name: ' ',
                 contentValid: false,
                 optionValid: false,
                 nameValid: false,

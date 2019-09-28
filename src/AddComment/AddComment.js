@@ -54,6 +54,19 @@ class AddComment extends Component {
             .catch(error => {
                 console.log(error);
             });
+        this.setState({
+            comment: {
+                id: null,
+                textArea: '',
+                name: '',
+                prompt_id: null,
+                contentValid: false,
+                nameValid: false,
+                formValid: false,
+                validationMessageName: '',
+                validationMessageContent: ''
+            }
+        })
     }
 
     handlePromptId() {
