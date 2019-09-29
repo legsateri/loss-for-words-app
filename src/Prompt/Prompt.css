@@ -17,6 +17,9 @@ body {
         margin-bottom: 20px;
         margin-left: 10px;
         margin-right: 10px;
+        font-family: big-caslon-fb, serif;
+        font-weight: 700;
+        font-style: normal;
     }
 
     .prompt_info {

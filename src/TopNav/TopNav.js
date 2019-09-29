@@ -8,9 +8,9 @@ class TopNav extends React.Component {
             <>
                 <nav role="navigation" className="navigation">
                     <ul className="nav_list">
-                        <li className="nav_options"><Link to='/'>[Placeholder For Logo]</Link></li>
-                        <li className="nav_options"><Link to='/prompts'>Find A Prompt</Link></li>
-                        <li className="nav_options"><Link to='/add-prompt'>Create A Prompt</Link></li>
+                        <li><Link to='/'><img src={require('./logo.png')} /></Link></li>
+                        <li className="nav_options"><Link className='link_style' to='/prompts' style={{ textDecoration: 'none' }} >Find A Prompt</Link></li>
+                        <li className="nav_options"><Link className= 'link_style' to='/add-prompt' style={{ textDecoration: 'none' }}>Create A Prompt</Link></li>
                         {/* TODO: Enable signup/login <li className="nav_options"> <Link to='/login'> Account </Link> </li> */}
                     </ul>
                 </nav>

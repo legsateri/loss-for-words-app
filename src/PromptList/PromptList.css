@@ -18,6 +18,9 @@ body {
 
     .prompt_list_h2 {
         font-size: 18px;
+        font-family: big-caslon-fb, serif;
+        font-weight: 700;
+        font-style: normal;
     }
 
     .prompt_author {
@@ -55,7 +58,6 @@ body {
         font-size: 12px;
         background-color: #ccc;
     }
-
     .prompt_category {
         font-style: italic;
         font-size: 12px;

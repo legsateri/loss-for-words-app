@@ -11,8 +11,8 @@ class MainPage extends Component {
     const prompts = this.context.prompts.map(prompt => {
       return (
         <>
-          <li key={prompt.id} className='prompt_list_item'>
-            <h3>{prompt.prompt_content}</h3>
+          <li key={prompt.id} className='prompt_list_item padding_prompt'>
+            <h3 className='prompt_content_main'>{prompt.prompt_content}</h3>
 
             <Link to={`/prompts/${prompt.id}`}>
               <button className='main_page_buttons view_button'>View Prompt</button>
@@ -29,11 +29,11 @@ class MainPage extends Component {
     return (
       <>
         <header className='site_title' role="banner">
-          <h1 className='main_page_height'>Loss For Words</h1>
-          <h2 className='main_page_height'>prompt your creativity</h2>
+          <h1 className='main_page_headline'>Loss For Words</h1>
+          <h2 className='main_page_subhead'>prompt your creativity</h2>
         </header>
 
-        <section className='random_prompt'>
+        <section className='random_prompt main_page_section'>
           <header>
             <ul>{randomPrompt}</ul>
           </header>

@@ -15,7 +15,7 @@ body {
         margin-top: 100px;
         margin-bottom: 60px;
     }
-
+    
     .random_prompt {
         font-size: 18px;
         padding-bottom: 30px;
@@ -55,7 +55,84 @@ body {
 
     .para_two, .para_one {
         font-size: 15px;
+        font-family: stratos, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .prompt_content_main {
+        font-family: big-caslon-fb, serif;
+        font-weight: 700;
+        font-style: normal;
+    }
+
+    .main_page_headline {
+        font-family: stratos, sans-serif;
+        font-weight: 800;
+        font-style: normal;
+        font-size: 35px;
+    }
+
+    .main_page_subhead {
+        font-family: stratos, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 20px;
+    }
+
+    .main_page_buttons:hover {
+        background-color: #aaa;
     }
 }
 
-@media only screen and (min-width: 750px) {}
+@media only screen and (min-width: 750px) {
+    .main_page_headline {
+        font-size: 50px;
+        padding-top: 70px;
+    }
+
+    .main_page_subhead {
+        font-size: 30px;
+        padding-bottom: 40px;
+    }
+
+    .prompt_content_main {
+        font-size: 25px;
+    }
+
+    .para_two, .para_one {
+        font-size: 18px;
+    }
+
+    .para_two {
+        margin-bottom: 100px;
+    }
+
+    .site_description {
+        padding-top: 100px;
+    }
+
+    .random_prompt {
+        padding-bottom: 100px;
+    }
+
+    .padding_prompt {
+        padding-top: 100px;
+    }
+
+    .main_page_buttons {
+        height: 30px;
+        width: 200px;
+        font-family: stratos, sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        font-size: 15px;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    .site_title, .main_page_section, .site_description {
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+}
