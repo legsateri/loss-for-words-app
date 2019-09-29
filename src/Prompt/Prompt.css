@@ -116,6 +116,10 @@ body {
         margin-bottom: 80px;
     }
 
+    .prompt_content {
+        font-size: 50px;
+    }
+
     .comment_author {
         padding-top: 15px;
     }
