@@ -42,6 +42,9 @@ body {
         border-radius: 1px;
         font-size: 12px;
         background-color: #ccc;
+        font-family: stratos, sans-serif;
+        font-weight: 500;
+        font-style: normal;
     }
 
     .view_button {
@@ -78,10 +81,6 @@ body {
         font-weight: 400;
         font-style: normal;
         font-size: 20px;
-    }
-
-    .main_page_buttons:hover {
-        background-color: #aaa;
     }
 }
 
@@ -123,10 +122,11 @@ body {
     .main_page_buttons {
         height: 30px;
         width: 200px;
-        font-family: stratos, sans-serif;
-        font-weight: 500;
-        font-style: normal;
         font-size: 15px;
+    }
+
+    .main_page_buttons:hover {
+        background-color: #aaa;
     }
 }
 

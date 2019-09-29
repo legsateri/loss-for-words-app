@@ -16,14 +16,7 @@
 
     .link_style:link {
         text-decoration: none;
-    }
-
-    .link_style:visited {
         color: black;
-    }
-
-    .link_style:hover {
-        color: grey;
     }
 
     .navigation {
@@ -39,7 +32,7 @@
         width: 50px;
     }
 
-    .active {
+    .link_style:visited {
         color: black;
     }
 }
@@ -52,5 +45,9 @@
 
     img {
         width: 75px;
+    }
+
+    .link_style:hover {
+        color: grey;
     }
 }
