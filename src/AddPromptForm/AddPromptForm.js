@@ -233,13 +233,13 @@ class AddPromptForm extends React.Component {
         return (
             <>
                 <section className='add_prompt_section'>
-                    <h1>Create Your Own Prompt</h1>
+                    <h1 className='add_prompt_header'>Create Your Own Prompt</h1>
                     <div className='add_prompt_form'>
                         <form onSubmit={event => this.handleSubmitPrompt(event)}>
                             <label className='input_label text_label' htmlFor='content'>Your Prompt</label>
                             <br />
                             <textarea
-                                className='input_field'
+                                className='input_field text_field'
                                 required
                                 value={this.state.prompt.textArea}
                                 onChange={event => this.handleChangeTextArea(event)}
@@ -249,7 +249,7 @@ class AddPromptForm extends React.Component {
                                 message={this.state.prompt.validationMessageContent} />
                             <br />
 
-                            <label className='input_label' htmlFor='name'>Author or Pseudonym</label>
+                            <label className='input_label' htmlFor='name'>Your Name (Real or Otherwise)</label>
                             <br />
                             <input
                                 className='input_field author_field'
