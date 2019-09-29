@@ -11,6 +11,7 @@ import TopNav from './TopNav/TopNav';
 import Footer from './Footer/Footer';
 import config from './config';
 import NotFound from './NotFound/NotFound';
+import RenderCategory from './RenderCategory/RenderCategory';
 
 class App extends React.Component {
     constructor(props) {
@@ -99,7 +100,7 @@ class App extends React.Component {
     }
 
     renderRoutes() {
-        const paths = ['/', '/add-prompt', '/account', '/login', '/prompts', '/prompts/:promptId', '/prompts/:category']
+        const paths = ['/', '/add-prompt', '/account', '/login', '/prompts', '/prompts/:promptId', '/prompts/:categoryName']
 
         return paths.map((path, index) => {
             if (path === '/') {
@@ -121,6 +122,13 @@ class App extends React.Component {
             }
             if (path === '/prompts/:promptId') {
                 return <Route key={index} exact path={path} component={Prompt} />
+            }
+            if (path === "/prompts/:categoryName") {
+                return <Route key={index} path={path} render={routeProps => {
+                    const categoryName = parseInt(routeProps.match.params.category) 
+                    const selectedPrompts = this.state.prompts.filter(prompt => prompt.category === categoryName);
+                    return <RenderCategory prompts={selectedPrompts} />
+                }} />
             }
         });
     }
@@ -148,7 +156,7 @@ class App extends React.Component {
                         </AppContext.Provider>
                     </NotFound>
                 </main>
-                
+
                 <Footer />
             </>
         );

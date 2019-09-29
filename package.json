@@ -9,6 +9,7 @@
     "@fortawesome/react-fontawesome": "^0.1.4",
     "browser-history": "^1.0.1",
     "font-awesome": "^4.7.0",
+    "prop-types": "^15.7.2",
     "query-string": "^5.1.1",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
