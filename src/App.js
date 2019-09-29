@@ -11,7 +11,7 @@ import TopNav from './TopNav/TopNav';
 import Footer from './Footer/Footer';
 import config from './config';
 import NotFound from './NotFound/NotFound';
-import FilteredList from './FilteredList/FilteredList';
+// import FilteredList from './FilteredList/FilteredList';
 
 class App extends React.Component {
     constructor(props) {
@@ -120,9 +120,9 @@ class App extends React.Component {
             if (path === '/prompts') {
                 return <Route key={index} exact path={path} component={PromptList} />
             }
-            if (path === '/prompts/category') {
-                return <Route key={index} path={path} component={FilteredList} />
-            }
+            // if (path === '/prompts/category') {
+            //     return <Route key={index} path={path} component={FilteredList} />
+            // }
             if (path === '/prompts/:promptId') {
                 return <Route key={index} exact path={path} component={Prompt} />
             }
