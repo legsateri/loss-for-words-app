@@ -66,7 +66,6 @@ body {
     }
     
     .prompt_category {
-        font-style: italic;
         font-size: 12px;
         margin-top: 20px;
         margin-bottom: 50px;
@@ -109,6 +108,12 @@ body {
 
     .prompt_list_item {
         padding-top: 75px;
+    }
+
+    .prompt_button {
+        height: 30px;
+        width: 200px;
+        font-size: 15px;
     }
 }
 

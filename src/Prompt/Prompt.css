@@ -27,8 +27,11 @@ body {
     }
 
     .prompt_align, .add_comment {
-        margin-top: 75px;
         text-align: center;
+    }
+
+    .prompt_align {
+        margin-top: 100px;
     }
 
     .prompt_button {
@@ -53,29 +56,44 @@ body {
     }
 
     .indi_prompt_category {
-        font-style: italic;
         font-size: 12px;
         margin-top: 10px;
-        margin-bottom: 75px;
+        margin-bottom: 50px;
         color: #aaa;
+        font-family: stratos, sans-serif;
+        font-weight: 300;
+        font-style: normal;
+    }
+
+    .comment_list {
+        padding-bottom: 50px;
+        padding-top: 30px;
+        padding-left: 15px;
+        padding-right: 15px;
+        font-family: stratos, sans-serif;
+        font-weight: 300;
+        font-style: normal;
+
     }
 
     .comment_author {
         font-size: 12px;
-        margin-bottom: 30px;
-        font-style: italic;
+        text-align: left;
+        padding-top: 10px;
     }
 
     .comment_content {
         font-size: 15px;
+        text-align: left;
     }
 
-    .comment_list {
-        background-color: #ddd;
-        padding-bottom: 5px;
-        padding-top: 30px;
-        padding-left: 10px;
-        padding-right: 10px;
+    .comment_list_item {
+        border: 1px solid #aaa;
+        margin-bottom: 20px;
+        padding-top: 15px; 
+        padding-left: 15px; 
+        padding-right: 15px; 
+        padding-bottom: 15px; 
     }
 }
 
@@ -88,5 +106,32 @@ body {
 
     .indi_prompt_category {
         font-size: 15px;
+    }
+
+    .prompt_align {
+        margin-top: 200px;
+    }
+
+    .indi_prompt_category {
+        margin-bottom: 80px;
+    }
+
+    .comment_author {
+        padding-top: 15px;
+    }
+
+    .comment_list_item {
+        margin-bottom: 35px;
+        padding-top: 20px; 
+        padding-left: 20px; 
+        padding-right: 20px; 
+        padding-bottom: 20px; 
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    .prompt_align, .add_comment {
+        margin-left: 15%;
+        margin-right: 15%;
     }
 }

@@ -198,7 +198,7 @@ class AddComment extends Component {
         return (
             <>
                 <section className='add_comment_section'>
-                    <h3>What You Have To Say</h3>
+                    <h3 className='comment_header'>What You Have To Say</h3>
                     <div className='add_comment_form'>
                         <form onSubmit={event => this.handleSubmitComment(event)}>
                             <label className='input_label text_label' htmlFor='content'>Your Response</label>
