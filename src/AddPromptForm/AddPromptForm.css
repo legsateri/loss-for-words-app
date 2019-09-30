@@ -24,11 +24,15 @@ body {
         width: 100px;
         border-radius: 1px;
         font-size: 12px;
-        background-color: #ccc;
-        color: black;
+        background-color: #23B7D9;
+        color: white;
         font-family: stratos, sans-serif;
         font-weight: 500;
         font-style: normal;
+    }
+
+    .submit_prompt_button:disabled {
+        background-color: #aaa;
     }
 
     .input_field {
@@ -58,7 +62,7 @@ body {
         border-radius: 1px;
         font-size: 12px;
         background-color: white;
-        color: black;
+        color: #444;
     }
 
     .dropdown_options {
@@ -71,6 +75,7 @@ body {
         font-weight: 800;
         font-style: normal;
         margin-bottom: 40px;
+        color: #1F3473;
     }
 }
 
@@ -92,10 +97,12 @@ body {
         height: 30px;
         width: 200px;
         font-size: 15px;
+        margin-bottom: 125px;
     }
 
     .submit_prompt_button:hover {
-        background-color: #aaa;
+        height: 33px;
+        width: 203px;
     }
 }
 

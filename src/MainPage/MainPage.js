@@ -18,7 +18,7 @@ class MainPage extends Component {
               <button className='main_page_buttons view_button'>View Prompt</button>
             </Link>
 
-            <Link to='/prompts'><button className='main_page_buttons'>See More</button></Link>
+            <Link to='/prompts'><button className='main_page_buttons see_more'>See More</button></Link>
           </li>
         </>
       );

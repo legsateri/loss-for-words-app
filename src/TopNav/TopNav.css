@@ -8,15 +8,15 @@
 
     .nav_options {
         font-size: 15px;
-        padding-top: 18px;
         font-family: stratos, sans-serif;
-        font-weight: 600;
+        font-weight: 400;
         font-style: normal;
+        padding-top: 15px;
     }
 
     .link_style:link {
         text-decoration: none;
-        color: black;
+        color: #444;
     }
 
     .navigation {
@@ -25,29 +25,34 @@
         left: 0;
         right: 0;
         z-index: 10;
-        background-color: #aaa;
+        background-color: white;
+        -webkit-box-shadow: 0px 0px 5px -2px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 0px 0px 5px -2px rgba(0, 0, 0, 0.75);
+        box-shadow: 0px 0px 5px -2px rgba(0, 0, 0, 0.75);
     }
 
     img {
-        width: 50px;
+        width: 40px;
+        padding-top: 5px;
     }
 
     .link_style:visited {
-        color: black;
+        color: #444;
     }
 }
 
 @media only screen and (min-width: 750px) {
     .nav_options {
         font-size: 18px;
-        padding-top: 30px;
+        padding-top: 18px;
+    }
+    
+    .link_style:hover {
+        height: 33px;
+        width: 203px;
     }
 
     img {
-        width: 75px;
-    }
-
-    .link_style:hover {
-        color: grey;
+        width: 50px;
     }
 }

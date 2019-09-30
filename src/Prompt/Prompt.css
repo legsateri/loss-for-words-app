@@ -46,12 +46,12 @@ body {
     }
 
     .prompt_link:link{
-        color: black;
+        color: #444;
         text-decoration: none;
     }
 
     .prompt_link:visited{
-        color: black;
+        color: #444;
         text-decoration: none;
     }
 
@@ -59,7 +59,7 @@ body {
         font-size: 15px;
         margin-top: 10px;
         margin-bottom: 50px;
-        color: #aaa;
+        color: #F2C777;
         font-family: stratos, sans-serif;
         font-weight: 300;
         font-style: normal;

@@ -24,7 +24,7 @@ body {
 
     .site_description {
         padding-top: 60px;
-        border-top: 1px solid #aaa;
+        border-top: 1px solid #F2F2F2;
     }
 
     .site_title, .site_description {
@@ -41,7 +41,6 @@ body {
         width: 100px;
         border-radius: 1px;
         font-size: 12px;
-        background-color: #ccc;
         font-family: stratos, sans-serif;
         font-weight: 500;
         font-style: normal;
@@ -49,6 +48,13 @@ body {
 
     .view_button {
         margin-right: 20px;
+        color: white;
+        background-color: #23B7D9;
+    }
+
+    .see_more {
+        background-color: #D9115A;
+        color: white;
     }
 
     .para_two {
@@ -65,7 +71,7 @@ body {
 
     .prompt_content_main {
         font-family: big-caslon-fb, serif;
-        font-weight: 700;
+        font-weight: 800;
         font-style: normal;
     }
 
@@ -74,6 +80,7 @@ body {
         font-weight: 800;
         font-style: normal;
         font-size: 35px;
+        color: #1F3473;
     }
 
     .main_page_subhead {
@@ -126,7 +133,8 @@ body {
     }
 
     .main_page_buttons:hover {
-        background-color: #aaa;
+        height: 33px;
+        width: 203px;
     }
 }
 
@@ -134,5 +142,9 @@ body {
     .site_title, .main_page_section, .site_description {
         margin-left: 15%;
         margin-right: 15%;
+    }
+
+    .main_page_headline {
+        font-size: 75px;
     }
 }

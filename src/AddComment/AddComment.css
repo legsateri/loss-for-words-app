@@ -1,14 +1,13 @@
 @media only screen and (min-width: 200px) {
     .submit_comment_button {
-        margin-bottom: 50px;
         border: 0px;
         padding: 0px;
         height: 25px;
         width: 100px;
         border-radius: 1px;
         font-size: 12px;
-        background-color: #ccc;
-        color: black;
+        background-color: #D9115A;
+        color: white;
         font-family: stratos, sans-serif;
         font-weight: 500;
         font-style: normal;
@@ -36,10 +35,15 @@
         font-weight: 600;
         font-style: normal;
         font-size: 30px;
+        color: #1F3473;
     }
 
     .add_comment_form {
         margin-top: 30px;
+    }
+
+    .submit_comment_button:disabled {
+        background-color: #aaa;
     }
 }
 
@@ -57,6 +61,12 @@
         height: 30px;
         width: 200px;
         font-size: 15px;
+        margin-bottom: 75px;
+    }
+
+    .submit_comment_button:hover {
+        height: 33px;
+        width: 203px;
     }
 
     .comment_header {
