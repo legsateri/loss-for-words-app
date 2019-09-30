@@ -28,7 +28,7 @@ body {
 
     .prompt_author {
         margin-top: 20px;
-        font-size: 13px;
+        font-size: 15px;
     }
 
     ul {
@@ -66,7 +66,7 @@ body {
     }
     
     .prompt_category {
-        font-size: 12px;
+        font-size: 15px;
         margin-top: 20px;
         margin-bottom: 50px;
         color: #aaa;
@@ -101,7 +101,7 @@ body {
     }
 
     .prompt_category {
-        font-size: 15px;
+        font-size: 18px;
         margin-top: 10px;
         margin-bottom: 75px;
     }
