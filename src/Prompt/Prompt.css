@@ -88,12 +88,31 @@ body {
     }
 
     .comment_list_item {
-        border: 1px solid #aaa;
         margin-bottom: 20px;
         padding-top: 15px; 
         padding-left: 15px; 
         padding-right: 15px; 
         padding-bottom: 15px; 
+    }
+
+    .comment_list_item:nth-child(4n + 1) {
+        background-color: #D9115A;
+        color: #F2C777;
+    }
+
+    .comment_list_item:nth-child(4n + 2) {
+        background-color: #1F3473;
+        color: #23B7D9;
+    }
+
+    .comment_list_item:nth-child(4n + 3) {
+        background-color: #23B7D9;
+        color: #1F3473;
+    }
+
+    .comment_list_item:nth-child(4n + 4) {
+        background-color: #F2C777;
+        color: #D9115A;
     }
 }
 

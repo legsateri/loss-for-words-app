@@ -74,13 +74,11 @@ class AddPromptForm extends React.Component {
     }
 
     handleSelectOption(option) {
-        const promptIndex = this.context.prompts.length.toString();
         const hasError = this.validateOption(option).hasError;
         const inputError = this.validateOption(option).inputError;
 
         this.setState({
             prompt: {
-                id: promptIndex,
                 textArea: this.state.prompt.textArea,
                 option: option,
                 name: this.state.prompt.name,
@@ -220,9 +218,8 @@ class AddPromptForm extends React.Component {
     validateForm() {
         const name = this.state.prompt.nameValid;
         const content = this.state.prompt.contentValid;
-        const option = this.state.prompt.optionValid;
 
-        if (name && content && option) {
+        if (name && content) {
             this.setState({
                 formValid: true
             });
