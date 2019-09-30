@@ -7,7 +7,7 @@
     }
 
     .nav_options {
-        font-size: 13px;
+        font-size: 15px;
         padding-top: 18px;
         font-family: stratos, sans-serif;
         font-weight: 600;
@@ -39,7 +39,7 @@
 
 @media only screen and (min-width: 750px) {
     .nav_options {
-        font-size: 15px;
+        font-size: 18px;
         padding-top: 30px;
     }
 
