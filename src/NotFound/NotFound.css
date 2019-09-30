@@ -18,6 +18,7 @@ body {
         font-weight: 800;
         font-style: normal;
         font-size: 35px;
+        color: #1F3473;
     }
 
     .not_found_h2 {
@@ -40,7 +41,7 @@ body {
         text-align: center;
         margin-right: 30px;
         margin-left: 30px;
-        margin-bottom: 60px;
+        height: 545px;
     }
 }
 
@@ -57,5 +58,15 @@ body {
     .not_found {
         font-size: 20px;
         padding-bottom: 30px;
+    }
+
+    .not_found_page {
+        height: 585px;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    .not_found_page {
+        height: 575px;
     }
 }
