@@ -1,3 +1,6 @@
+// FIXME: Redirect to new prompt page upon submit. 
+// FIXME: When adding a prompt get TypeError.
+
 import React from 'react';
 import './AddPromptForm.css';
 import AppContext from '../AppContext';

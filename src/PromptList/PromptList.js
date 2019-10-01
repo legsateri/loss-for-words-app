@@ -1,3 +1,6 @@
+// FIXME: Add infinite scroll or load more so page doesn't take so long to load. 
+        // Resource: https://infinite-scroll.com/
+
 import React from 'react';
 import shuffle from 'shuffle-array';
 import './PromptList.css';

@@ -1,4 +1,5 @@
 // FIXME: Have prompt page refresh once comment is submitted.
+// FIXME: When adding a comment get TypeError.
 
 import React, { Component } from 'react';
 import './AddComment.css';
