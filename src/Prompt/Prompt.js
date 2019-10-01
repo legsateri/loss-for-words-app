@@ -1,3 +1,5 @@
+//FIXME: Page still needs to load after refresh
+
 import React from 'react';
 import './Prompt.css';
 import { Link } from 'react-router-dom';

@@ -1,3 +1,8 @@
+body {
+    font-size: 20px;
+    color: #444;
+}
+
 @media only screen and (min-width: 200px) {
     .submit_comment_button {
         border: 0px;
@@ -6,9 +11,8 @@
         width: 100px;
         border-radius: 1px;
         font-size: 12px;
-        background-color: #D9115A;
+        background-color: #F2C777;
         color: white;
-        font-family: stratos, sans-serif;
         font-weight: 500;
         font-style: normal;
     }
@@ -16,23 +20,21 @@
     .input_field {
         border: 1px solid #aaa;
         width: 300px;
+        margin-bottom: 20px;
+        margin-top: 10px;
     }
 
     .author_field {
         height: 25px;
-        margin-bottom: 30px;
     }
 
     .input_label {
         line-height: 0;
-        font-size: 15px;
-        font-family: stratos, sans-serif;
-        font-weight: 400;
+        font-size: 18px;
         font-style: normal;
     }
 
     .comment_header {
-        font-family: stratos, sans-serif;
         font-weight: 600;
         font-style: normal;
         font-size: 30px;

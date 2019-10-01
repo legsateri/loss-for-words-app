@@ -1,3 +1,5 @@
+// FIXME: Have prompt page refresh once comment is submitted.
+
 import React, { Component } from 'react';
 import './AddComment.css';
 import AppContext from '../AppContext';
@@ -201,7 +203,7 @@ class AddComment extends Component {
                     <h3 className='comment_header'>What You Have To Say</h3>
                     <div className='add_comment_form'>
                         <form onSubmit={event => this.handleSubmitComment(event)}>
-                            <label className='input_label text_label' htmlFor='content'>Your Response</label>
+                            <label className='input_label text_label' htmlFor='content'>Your Response*</label>
                             <br />
                             <textarea
                                 className='input_field text_field'
@@ -214,7 +216,7 @@ class AddComment extends Component {
                                 message={this.state.comment.validationMessageContent} />
                             <br />
 
-                            <label className='input_label' htmlFor='name'>Your Name (Real or Otherwise)</label>
+                            <label className='input_label' htmlFor='name'>Your Name (Real or Otherwise)*</label>
                             <br />
                             <input
                                 className='input_field author_field'

@@ -56,21 +56,8 @@ class AddPromptForm extends React.Component {
             .catch(error => {
                 console.log(error)
             });
-        this.setState({
-            prompt: {
-                id: null,
-                textArea: '',
-                option: 'Choose One',
-                name: ' ',
-                contentValid: false,
-                optionValid: false,
-                nameValid: false,
-                formValid: false,
-                validationMessageContent: '',
-                validationMessageOption: '',
-                validationMessageName: ''
-            }
-        })
+
+            this.props.history.push(`/prompts`);
     }
 
     handleSelectOption(option) {
@@ -233,11 +220,10 @@ class AddPromptForm extends React.Component {
                     <h1 className='add_prompt_header'>Create Your Own Prompt</h1>
                     <div className='add_prompt_form'>
                         <form onSubmit={event => this.handleSubmitPrompt(event)}>
-                            <label className='input_label text_label' htmlFor='content'>Your Prompt</label>
+                            <label className='input_label text_label' htmlFor='content'>Your Prompt*</label>
                             <br />
                             <textarea
                                 className='input_field text_field'
-                                required
                                 value={this.state.prompt.textArea}
                                 onChange={event => this.handleChangeTextArea(event)}
                                 rows='15' />
@@ -246,21 +232,20 @@ class AddPromptForm extends React.Component {
                                 message={this.state.prompt.validationMessageContent} />
                             <br />
 
-                            <label className='input_label' htmlFor='name'>Your Name (Real or Otherwise)</label>
+                            <label className='input_label' htmlFor='name'>Your Name (Real or Otherwise)*</label>
                             <br />
                             <input
                                 className='input_field author_field'
                                 type='text'
                                 id='name'
                                 name='name'
-                                required
                                 onChange={event => this.handleChangePromptName(event)} />
                             <ValidationError
                                 hasError={!this.state.prompt.nameValid}
                                 message={this.state.prompt.validationMessageName} />
                             <br />
 
-                            <label className='input_label' htmlFor='options'>Category</label>
+                            <label className='input_label' htmlFor='options'>Category*</label>
                             <br />
                             <select
                                 className='input_field option_field'
@@ -269,7 +254,7 @@ class AddPromptForm extends React.Component {
                                 required
                                 onChange={event => this.handleSelectOption(event.target.value)}
                             >
-                                <option className='dropdown_options' value='Choose One'>Choose One</option>
+                                <option className='dropdown_options' value='Choose One'></option>
                                 <option className='dropdown_options' value='Animals'>Animals</option>
                                 <option className='dropdown_options' value='Comedy'>Comedy</option>
                                 <option className='dropdown_options' value='Fantasy'>Fantasy</option>

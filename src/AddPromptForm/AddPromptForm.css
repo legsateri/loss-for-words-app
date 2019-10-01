@@ -1,3 +1,5 @@
+/* TODO: Need to style error messages */
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -5,7 +7,6 @@
 }
 
 body {
-    font-family: "Open Sans", sans-serif;
     font-size: 20px;
     color: #444;
 }
@@ -26,9 +27,7 @@ body {
         font-size: 12px;
         background-color: #23B7D9;
         color: white;
-        font-family: stratos, sans-serif;
         font-weight: 500;
-        font-style: normal;
     }
 
     .submit_prompt_button:disabled {
@@ -71,9 +70,7 @@ body {
 
     .add_prompt_header {
         font-size: 35px;
-        font-family: stratos, sans-serif;
         font-weight: 800;
-        font-style: normal;
         margin-bottom: 40px;
         color: #1F3473;
     }
