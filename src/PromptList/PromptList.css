@@ -5,7 +5,6 @@
 }
 
 body {
-    font-family: stratos, sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 20px;
@@ -14,7 +13,6 @@ body {
 
 @media only screen and (min-width: 200px) {
     .prompt_list_h1 {
-        font-family: stratos, sans-serif;
         font-weight: 800;
         font-style: normal;
         font-size: 35px;
@@ -25,7 +23,6 @@ body {
     .prompt_list_h2 {
         font-size: 20px;
         font-family: big-caslon-fb, serif;
-        font-weight: 800;
         font-style: normal;
     }
 
@@ -64,7 +61,6 @@ body {
         font-size: 12px;
         background-color: #23B7D9;
         color: white;
-        font-family: stratos, sans-serif;
         font-weight: 500;
         font-style: normal;
     }
@@ -77,7 +73,6 @@ body {
     }
 
     .prompt_category, .prompt_author {
-        font-family: stratos, sans-serif;
         font-weight: 300;
         font-style: normal;
     }
@@ -99,7 +94,6 @@ body {
     }
 
     .prompt_list {
-        /* margin-left: 200px; */
         margin-left: 50px;
         margin-right: 50px;
     }

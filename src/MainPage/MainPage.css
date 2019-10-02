@@ -5,7 +5,6 @@
 }
 
 body {
-    font-family: stratos, sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 20px;
@@ -13,10 +12,16 @@ body {
 }
 
 @media only screen and (min-width: 200px) {
+    .main_page_headline {
+        font-style: normal;
+        font-weight: 800;
+        font-size: 35px;
+        color: #1F3473;
+    }
+
     .site_title {
         margin-top: 100px;
         margin-bottom: 60px;
-        font-family: stratos, sans-serif;
     }
     
     .random_prompt {
@@ -43,8 +48,7 @@ body {
         height: 25px;
         width: 100px;
         border-radius: 1px;
-        font-size: 12px;
-        font-family: stratos, sans-serif;
+        font-size: 15px;
         font-weight: 500;
         font-style: normal;
     }
@@ -67,27 +71,16 @@ body {
 
     .para_two, .para_one {
         font-size: 16px;
-        font-family: stratos, sans-serif;
         font-weight: 400;
         font-style: normal;
     }
 
     .prompt_content_main {
         font-family: big-caslon-fb, serif;
-        font-weight: 800;
         font-style: normal;
-    }
-
-    .main_page_headline {
-        font-family: stratos, sans-serif;
-        font-weight: 800;
-        font-style: normal;
-        font-size: 35px;
-        color: #1F3473;
     }
 
     .main_page_subhead {
-        font-family: stratos, sans-serif;
         font-weight: 400;
         font-style: normal;
         font-size: 20px;
@@ -107,6 +100,7 @@ body {
 
     .prompt_content_main {
         font-size: 25px;
+        font-weight: 400px;
     }
 
     .para_two, .para_one {
