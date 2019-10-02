@@ -1,5 +1,3 @@
-//FIXME: Page needs to load after refresh
-
 import React from 'react';
 import './Prompt.css';
 import { Link } from 'react-router-dom';
@@ -11,8 +9,13 @@ class Prompt extends React.Component {
     static contextType = AppContext;
 
     render() {
+        console.log(this.context);
+        console.log(this.context.prompts[0]);
+
         const promptId = parseInt(this.props.match.params.promptId);
         const prompt = this.context.prompts.find(prompt => prompt.id === promptId);
+
+        console.log(promptId);
 
         const commentPromptId = parseInt(this.props.match.params.promptId);
         const comments = this.context.comments;
