@@ -1,5 +1,3 @@
-// FIXME: Remove DS_STORE
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './TopNav.css';

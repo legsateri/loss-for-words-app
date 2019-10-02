@@ -1,5 +1,3 @@
-// FIXME: When adding a prompt get TypeError.
-
 import React from 'react';
 import './AddPromptForm.css';
 import AppContext from '../AppContext';

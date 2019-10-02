@@ -133,8 +133,8 @@ class App extends React.Component {
         const contextValue = {
             prompts: this.state.prompts,
             comments: this.state.comments,
-            addPrompt: this.state.addPrompt,
-            addComment: this.state.addComment
+            addPrompt: this.addPrompt,
+            addComment: this.addComment
         };
 
         return (

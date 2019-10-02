@@ -50,12 +50,25 @@ class AddComment extends Component {
                 return response.json();
             })
             .then(responseJson => {
-                this.context.addComment(this.state.comment);
-                this.props.history.push('/');
+                this.context.addComment(newComment);
             })
             .catch(error => {
                 console.log(error);
             });
+
+        this.setState({
+            comment: {
+                id: null,
+                textArea: '',
+                name: '',
+                prompt_id: null,
+                contentValid: false,
+                nameValid: false,
+                formValid: false,
+                validationMessageName: '',
+                validationMessageContent: ''
+            }
+        })
     }
 
     handlePromptId() {
