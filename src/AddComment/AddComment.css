@@ -10,11 +10,12 @@ body {
         height: 25px;
         width: 100px;
         border-radius: 1px;
-        font-size: 15px;
         background-color: #F2C777;
         color: white;
-        font-weight: 500;
+        font-size: 13px;
+        font-weight: 400;
         font-style: normal;
+        font-family: 'Oswald', sans-serif;
     }
 
     .input_field {
@@ -30,7 +31,7 @@ body {
 
     .input_label {
         line-height: 0;
-        font-size: 18px;
+        font-size: 15px;
         font-style: normal;
     }
 
@@ -73,7 +74,11 @@ body {
     }
 
     .comment_header {
-        font-size: 40px;
+        font-size: 45px;
+    }
+
+    .input_label {
+        font-size: 18px;
     }
 }
 

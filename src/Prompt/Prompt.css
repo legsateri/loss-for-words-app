@@ -35,17 +35,6 @@ body {
         margin-top: 100px;
     }
 
-    .prompt_button {
-        margin-top: 20px;
-        border: 0px;
-        padding: 0px;
-        height: 25px;
-        width: 100px;
-        border-radius: 1px;
-        font-size: 15px;
-        background-color: #ccc;
-    }
-
     .prompt_link:link{
         color: #444;
         text-decoration: none;
@@ -82,7 +71,7 @@ body {
     }
 
     .comment_content {
-        font-size: 18px;
+        font-size: 16px;
         text-align: left;
     }
 
@@ -113,11 +102,14 @@ body {
         background-color: #F2C777;
         color: #D9115A;
     }
+
+    .comment_content {
+        font-size: 18px;
+    }
 }
 
 @media only screen and (min-width: 750px) {
     .prompt_align, .add_comment {
-        /* margin-left: 200px; */
         margin-left: 50px;
         margin-right: 50px;
     }
@@ -140,6 +132,7 @@ body {
 
     .comment_author {
         padding-top: 15px;
+        font-size: 16px;
     }
 
     .comment_list_item {

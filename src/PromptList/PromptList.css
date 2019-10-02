@@ -30,6 +30,8 @@ body {
     .prompt_author {
         margin-top: 20px;
         font-size: 15px;
+        font-weight: 300;
+        font-style: normal;
     }
 
     ul {
@@ -59,11 +61,12 @@ body {
         height: 25px;
         width: 100px;
         border-radius: 1px;
-        font-size: 12px;
         background-color: #23B7D9;
         color: white;
-        font-weight: 500;
+        font-size: 13px;
+        font-weight: 400;
         font-style: normal;
+        font-family: 'Oswald', sans-serif;
     }
     
     .prompt_category {
@@ -71,17 +74,14 @@ body {
         margin-top: 20px;
         margin-bottom: 50px;
         color: #F2C777;
-    }
-
-    .prompt_category, .prompt_author {
-        font-weight: 300;
+        font-weight: 400;
         font-style: normal;
     }
 }
 
 @media only screen and (min-width: 750px) {
     .prompt_list_h1 {
-        font-size: 50px;
+        font-size: 55px;
         padding-top: 70px;
         padding-bottom: 70px;
     }
@@ -125,5 +125,9 @@ body {
     .prompt_list {
         margin-left: 15%;
         margin-right: 15%;
+    }
+
+    .prompt_list_h2 {
+        font-size: 30px;
     }
 }
