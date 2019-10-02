@@ -22,29 +22,23 @@ body {
         font-weight: 700;
         font-style: normal;
     }
-
     .prompt_info {
         font-size: 18px;
     }
-
     .prompt_align, .add_comment {
         text-align: center;
     }
-
     .prompt_align {
         margin-top: 100px;
     }
-
-    .prompt_link:link{
+    .prompt_link:link {
         color: #444;
         text-decoration: none;
     }
-
-    .prompt_link:visited{
+    .prompt_link:visited {
         color: #444;
         text-decoration: none;
     }
-
     .indi_prompt_category {
         font-size: 15px;
         margin-top: 10px;
@@ -53,7 +47,6 @@ body {
         font-weight: 400;
         font-style: normal;
     }
-
     .comment_list {
         padding-bottom: 50px;
         padding-top: 30px;
@@ -61,48 +54,39 @@ body {
         padding-right: 15px;
         font-weight: 300;
         font-style: normal;
-
     }
-
     .comment_author {
         font-size: 15px;
         text-align: left;
         padding-top: 10px;
     }
-
     .comment_content {
         font-size: 16px;
         text-align: left;
     }
-
     .comment_list_item {
         margin-bottom: 20px;
-        padding-top: 15px; 
-        padding-left: 15px; 
-        padding-right: 15px; 
-        padding-bottom: 15px; 
+        padding-top: 15px;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 15px;
     }
-
     .comment_list_item:nth-child(4n + 1) {
         background-color: #D9115A;
         color: #F2C777;
     }
-
     .comment_list_item:nth-child(4n + 2) {
         background-color: #1F3473;
         color: #23B7D9;
     }
-
     .comment_list_item:nth-child(4n + 3) {
         background-color: #23B7D9;
         color: #1F3473;
     }
-
     .comment_list_item:nth-child(4n + 4) {
         background-color: #F2C777;
         color: #D9115A;
     }
-
     .comment_content {
         font-size: 18px;
     }
@@ -113,34 +97,28 @@ body {
         margin-left: 50px;
         margin-right: 50px;
     }
-
     .indi_prompt_category {
         font-size: 18px;
     }
-
     .prompt_align {
         margin-top: 200px;
     }
-
     .indi_prompt_category {
         margin-bottom: 80px;
     }
-
     .prompt_content {
         font-size: 50px;
     }
-
     .comment_author {
         padding-top: 15px;
         font-size: 16px;
     }
-
     .comment_list_item {
         margin-bottom: 35px;
-        padding-top: 20px; 
-        padding-left: 20px; 
-        padding-right: 20px; 
-        padding-bottom: 20px; 
+        padding-top: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 20px;
     }
 }
 

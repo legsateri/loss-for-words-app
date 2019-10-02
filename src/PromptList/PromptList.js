@@ -3,7 +3,6 @@ import shuffle from 'shuffle-array';
 import './PromptList.css';
 import AppContext from '../AppContext';
 import { Link } from 'react-router-dom';
-// import CategoryList from '../CategoryList/CategoryList';
 
 class PromptList extends React.Component {
     static contextType = AppContext;

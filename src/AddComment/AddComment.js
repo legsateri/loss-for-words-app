@@ -1,5 +1,3 @@
-// FIXME: When adding a comment get TypeError.
-
 import React, { Component } from 'react';
 import './AddComment.css';
 import AppContext from '../AppContext';

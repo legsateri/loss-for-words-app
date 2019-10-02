@@ -20,7 +20,6 @@ body {
         font-size: 35px;
         color: #1F3473;
     }
-
     .not_found_h2 {
         font-size: 18px;
         padding-top: 20px;
@@ -28,13 +27,11 @@ body {
         font-weight: 600;
         font-style: normal;
     }
-
     .not_found {
         font-size: 15px;
         font-weight: 300;
         font-style: normal;
     }
-
     .not_found_page {
         text-align: center;
         margin-right: 30px;
@@ -48,16 +45,13 @@ body {
         font-size: 55px;
         padding-top: 150px;
     }
-
     .not_found_h2 {
         font-size: 25px;
     }
-
     .not_found {
         font-size: 20px;
         padding-bottom: 30px;
     }
-
     .not_found_page {
         height: 585px;
     }

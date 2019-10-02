@@ -17,29 +17,24 @@ body {
         font-size: 42px;
         color: #1F3473;
     }
-
     .site_title {
         margin-top: 100px;
         margin-bottom: 60px;
     }
-    
     .random_prompt {
         font-size: 18px;
         padding-bottom: 30px;
         text-align: center;
     }
-
     .site_description {
         padding-top: 60px;
         border-top: 1px solid #F2F2F2;
     }
-
     .site_title, .site_description {
         margin-right: 30px;
         margin-left: 30px;
         text-align: center;
     }
-
     .main_page_buttons {
         margin-top: 20px;
         border: 0px;
@@ -52,35 +47,29 @@ body {
         font-style: normal;
         font-family: 'Oswald', sans-serif;
     }
-
     .view_button {
         margin-right: 20px;
         color: white;
         background-color: #23B7D9;
     }
-
     .see_more {
         background-color: #D9115A;
         color: white;
     }
-
     .para_two {
         margin-top: 20px;
         margin-bottom: 60px;
     }
-
     .para_two, .para_one {
         font-size: 17px;
         font-weight: 400;
         font-style: normal;
     }
-
     .prompt_content_main {
         font-family: big-caslon-fb, serif;
         font-style: normal;
         font-size: 22px;
     }
-
     .main_page_subhead {
         font-weight: 400;
         font-style: normal;
@@ -93,43 +82,34 @@ body {
         font-size: 60px;
         padding-top: 70px;
     }
-
     .main_page_subhead {
         font-size: 30px;
         padding-bottom: 40px;
     }
-
     .prompt_content_main {
         font-size: 25px;
         font-weight: 400px;
     }
-
     .para_two, .para_one {
         font-size: 20px;
     }
-
     .para_two {
         margin-bottom: 100px;
     }
-
     .site_description {
         padding-top: 100px;
     }
-
     .random_prompt {
         padding-bottom: 100px;
     }
-
     .padding_prompt {
         padding-top: 100px;
     }
-
     .main_page_buttons {
         height: 30px;
         width: 200px;
         font-size: 15px;
     }
-
     .main_page_buttons:hover {
         height: 33px;
         width: 203px;
@@ -141,7 +121,6 @@ body {
         margin-left: 15%;
         margin-right: 15%;
     }
-
     .main_page_headline {
         font-size: 75px;
     }

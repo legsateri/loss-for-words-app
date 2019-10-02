@@ -19,25 +19,21 @@ body {
         margin-bottom: 40px;
         color: #1F3473;
     }
-
     .prompt_list_h2 {
         font-size: 20px;
         font-family: big-caslon-fb, serif;
         font-weight: 400px;
         font-style: normal;
     }
-
     .prompt_author {
         margin-top: 20px;
         font-size: 15px;
         font-weight: 300;
         font-style: normal;
     }
-
     ul {
         list-style: none;
     }
-
     .prompt_list_item {
         margin-left: 0;
         margin-right: 0;
@@ -48,12 +44,10 @@ body {
         margin-right: 30px;
         margin-left: 30px
     }
-
     .prompt_list {
         margin-top: 100px;
         text-align: center;
     }
-
     .prompt_button {
         margin-top: 20px;
         border: 0px;
@@ -68,7 +62,6 @@ body {
         font-style: normal;
         font-family: 'Oswald', sans-serif;
     }
-    
     .prompt_category {
         font-size: 15px;
         margin-top: 20px;
@@ -85,36 +78,29 @@ body {
         padding-top: 70px;
         padding-bottom: 70px;
     }
-
     .prompt_list_h2 {
         font-size: 25px;
     }
-
     .prompt_author {
         font-size: 18px;
     }
-
     .prompt_list {
         margin-left: 50px;
         margin-right: 50px;
     }
-
     .prompt_category {
         font-size: 18px;
         margin-top: 10px;
         margin-bottom: 75px;
     }
-
     .prompt_list_item {
         padding-top: 75px;
     }
-
     .prompt_button {
         height: 30px;
         width: 200px;
         font-size: 15px;
     }
-
     .prompt_button:hover {
         height: 33px;
         width: 203px;
@@ -126,7 +112,6 @@ body {
         margin-left: 15%;
         margin-right: 15%;
     }
-
     .prompt_list_h2 {
         font-size: 30px;
     }

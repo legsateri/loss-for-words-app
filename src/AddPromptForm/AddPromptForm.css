@@ -14,7 +14,6 @@ body {
         text-align: center;
         margin-top: 100px;
     }
-    
     .submit_prompt_button {
         margin-bottom: 50px;
         border: 0px;
@@ -29,29 +28,23 @@ body {
         font-style: normal;
         font-family: 'Oswald', sans-serif;
     }
-
     .submit_prompt_button:disabled {
         background-color: #aaa;
     }
-
     .input_field {
         border: 1px solid #aaa;
         width: 300px;
     }
-
     .author_field {
         height: 25px;
     }
-
     .text_label {
         margin-top: 30px;
     }
-
     .input_label {
         font-size: 15px;
         line-height: 0;
     }
-
     .option_field {
         margin-bottom: 30px;
         border: 0px;
@@ -63,11 +56,9 @@ body {
         background-color: white;
         color: #444;
     }
-
     .dropdown_options {
         text-align: center;
     }
-
     .add_prompt_header {
         font-size: 35px;
         font-weight: 800;
@@ -80,23 +71,19 @@ body {
     .add_prompt_section {
         margin-top: 175px;
     }
-
     .add_prompt_header {
         font-size: 55px;
         margin-bottom: 60px;
     }
-
     .input_label {
         font-size: 15px;
     }
-
     .submit_prompt_button {
         height: 30px;
         width: 200px;
         font-size: 15px;
         margin-bottom: 125px;
     }
-
     .submit_prompt_button:hover {
         height: 33px;
         width: 203px;

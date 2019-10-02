@@ -17,35 +17,29 @@ body {
         font-style: normal;
         font-family: 'Oswald', sans-serif;
     }
-
     .input_field {
         border: 1px solid #aaa;
         width: 300px;
         margin-bottom: 20px;
         margin-top: 10px;
     }
-
     .author_field {
         height: 25px;
     }
-
     .input_label {
         line-height: 0;
         font-size: 15px;
         font-style: normal;
     }
-
     .comment_header {
         font-weight: 600;
         font-style: normal;
         font-size: 30px;
         color: #1F3473;
     }
-
     .add_comment_form {
         margin-top: 30px;
     }
-
     .submit_comment_button:disabled {
         background-color: #aaa;
     }
@@ -56,27 +50,22 @@ body {
         width: 400px;
         font-size: 15px;
     }
-
     .author_field {
         width: 300px;
     }
-
     .submit_comment_button {
         height: 30px;
         width: 200px;
         font-size: 15px;
         margin-bottom: 75px;
     }
-
     .submit_comment_button:hover {
         height: 33px;
         width: 203px;
     }
-
     .comment_header {
         font-size: 45px;
     }
-
     .input_label {
         font-size: 18px;
     }

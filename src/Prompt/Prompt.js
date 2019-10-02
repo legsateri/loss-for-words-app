@@ -3,7 +3,6 @@ import './Prompt.css';
 import { Link } from 'react-router-dom';
 import AppContext from '../AppContext';
 import AddComment from '../AddComment/AddComment';
-// import CategoryList from '../CategoryList/CategoryList';
 
 class Prompt extends React.Component {
     static contextType = AppContext;

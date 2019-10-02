@@ -56,7 +56,7 @@ class AddPromptForm extends React.Component {
                 console.log(error)
             });
 
-            this.props.history.push(`/prompts`);
+        this.props.history.push(`/prompts`);
     }
 
     handleSelectOption(option) {

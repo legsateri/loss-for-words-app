@@ -27,24 +27,24 @@ class MainPage extends Component {
 
     return (
       <>
-          <header className='site_title' role='banner'>
-            <h1 className='main_page_headline'>Loss For Words</h1>
-            <h2 className='main_page_subhead'>prompt your creativity</h2>
+        <header className='site_title' role='banner'>
+          <h1 className='main_page_headline'>Loss For Words</h1>
+          <h2 className='main_page_subhead'>prompt your creativity</h2>
+        </header>
+
+        <section className='random_prompt main_page_section'>
+          <header>
+            <ul>{randomPrompt}</ul>
           </header>
+        </section>
 
-          <section className='random_prompt main_page_section'>
-            <header>
-              <ul>{randomPrompt}</ul>
-            </header>
-          </section>
-
-          <section className='site_description'>
-            <p className='para_one'> Got writer's block? Get the creative juices flowing with a writing prompt or two. Some are rude, some a crude, but all our prompts have just the right amount of 'tude to get you thinking outside the box.</p>
-            <p className='para_two'>And if at the end of the day you really like what you had to say, share your words with your peers—you might just have the beginnings of a new story on your hands.</p>
-          </section>
+        <section className='site_description'>
+          <p className='para_one'> Got writer's block? Get the creative juices flowing with a writing prompt or two. Some are rude, some a crude, but all our prompts have just the right amount of 'tude to get you thinking outside the box.</p>
+          <p className='para_two'>And if at the end of the day you really like what you had to say, share your words with your peers—you might just have the beginnings of a new story on your hands.</p>
+        </section>
       </>
-        );
-      }
-    }
-    
+    );
+  }
+}
+
 export default MainPage;

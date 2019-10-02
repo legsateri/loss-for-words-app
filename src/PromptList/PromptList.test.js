@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import PromptList from './PromptList';
-import { BrowerRouter } from 'react-router-dom';
 
 describe('PromptList component', () => {
     it('renders without crashing', () => {
