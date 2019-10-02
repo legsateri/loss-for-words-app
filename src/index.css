@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: stratos, sans-serif;
+  font-family: 'Oswald', sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 15px;
@@ -9,5 +9,5 @@ body {
 }
 
 code {
-  font-family: stratos, sans-serif;
+  font-family: 'Oswald', sans-serif;
 }

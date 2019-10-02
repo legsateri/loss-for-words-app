@@ -6,15 +6,14 @@
 
 body {
     font-weight: 400;
-    font-style: normal;
     font-size: 20px;
     color: #444;
 }
 
 @media only screen and (min-width: 200px) {
     .main_page_headline {
-        font-style: normal;
-        font-weight: 800;
+        font-family: 'Oswald', sans-serif;
+        font-weight: 700;
         font-size: 35px;
         color: #1F3473;
     }
