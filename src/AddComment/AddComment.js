@@ -141,7 +141,7 @@ class AddComment extends Component {
 
         inputValue = inputValue.trim();
         if (inputValue.length === 0) {
-            inputError = "Author is required";
+            inputError = 'Author is required';
             hasError = true;
         } else {
             if (inputValue.length < 3) {

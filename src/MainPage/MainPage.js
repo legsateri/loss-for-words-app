@@ -27,7 +27,7 @@ class MainPage extends Component {
 
     return (
       <>
-          <header className='site_title' role="banner">
+          <header className='site_title' role='banner'>
             <h1 className='main_page_headline'>Loss For Words</h1>
             <h2 className='main_page_subhead'>prompt your creativity</h2>
           </header>

@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 export default function ValidationError(props) {
     if (props.hasError) {
         return (
-            <div className="error">
+            <div className='error'>
                 {props.message}
             </div>
         );

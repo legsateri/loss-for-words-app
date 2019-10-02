@@ -125,14 +125,14 @@ class App extends React.Component {
 
         return (
             <>
-                <header className="navigation">
+                <header className='navigation'>
                     <TopNav />
                 </header>
 
                 <main>
                     <NotFound>
                         <AppContext.Provider value={contextValue}>
-                            <section className="main">
+                            <section className='main'>
                                 {this.renderRoutes()}
                             </section>
                         </AppContext.Provider>
