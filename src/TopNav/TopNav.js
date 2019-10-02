@@ -11,7 +11,6 @@ class TopNav extends React.Component {
                         <li><Link to='/'><img src={require('./logo.png')} alt='loss for words logo'/></Link></li>
                         <li className="nav_options"><Link className='link_style' to='/prompts' style={{ textDecoration: 'none' }} >Find A Prompt</Link></li>
                         <li className="nav_options"><Link className= 'link_style' to='/add-prompt' style={{ textDecoration: 'none' }}>Create A Prompt</Link></li>
-                        {/* TODO: Enable signup/login <li className="nav_options"> <Link to='/login'> Account </Link> </li> */}
                     </ul>
                 </nav>
             </>

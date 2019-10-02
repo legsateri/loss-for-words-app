@@ -5,13 +5,10 @@ import { Route } from 'react-router-dom';
 import Prompt from './Prompt/Prompt';
 import PromptList from './PromptList/PromptList';
 import MainPage from './MainPage/MainPage';
-//import Account from './Account/Account';
-//import LoginForm from './LoginForm/LoginForm';
 import TopNav from './TopNav/TopNav';
 import Footer from './Footer/Footer';
 import config from './config';
 import NotFound from './NotFound/NotFound';
-// import FilteredList from './FilteredList/FilteredList';
 
 class App extends React.Component {
     constructor(props) {
@@ -100,7 +97,7 @@ class App extends React.Component {
     }
 
     renderRoutes() {
-        const paths = ['/', '/add-prompt', '/account', '/login', '/prompts', '/prompts/:promptId', '/prompts/category']
+        const paths = ['/', '/add-prompt', '/prompts', '/prompts/:promptId']
 
         return paths.map((path, index) => {
             if (path === '/') {
@@ -109,20 +106,9 @@ class App extends React.Component {
             if (path === '/add-prompt') {
                 return <Route key={index} path={path} component={AddPromptForm} />
             }
-            // TODO: Enable signup/login
-            // if (path === '/account') {
-            //     return <Route key={index} path={path} component={Account} />
-            // }
-            // TODO: Enable signup/login
-            // if (path === '/login') {
-            //     return <Route key={index} path={path} component={LoginForm} />
-            // }
             if (path === '/prompts') {
                 return <Route key={index} exact path={path} component={PromptList} />
             }
-            // if (path === '/prompts/category') {
-            //     return <Route key={index} path={path} component={FilteredList} />
-            // }
             if (path === '/prompts/:promptId') {
                 return <Route key={index} exact path={path} component={Prompt} />
             }

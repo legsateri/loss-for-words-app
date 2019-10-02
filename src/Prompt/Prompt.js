@@ -9,13 +9,8 @@ class Prompt extends React.Component {
     static contextType = AppContext;
 
     render() {
-        console.log(this.context);
-        console.log(this.context.prompts[0]);
-
         const promptId = parseInt(this.props.match.params.promptId);
         const prompt = this.context.prompts.find(prompt => prompt.id === promptId);
-
-        console.log(promptId);
 
         const commentPromptId = parseInt(this.props.match.params.promptId);
         const comments = this.context.comments;
@@ -37,10 +32,6 @@ class Prompt extends React.Component {
 
         return (
             <>
-                {/* <section className='sidebar'>
-                    <CategoryList />
-                </section> */}
-
                 <section className='prompt_align'>
                     <div className='content_container'>
                         <Link to={`/prompts/${promptId}`} className='prompt_link'>
