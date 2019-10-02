@@ -1,4 +1,3 @@
-// FIXME: Redirect to new prompt page upon submit. 
 // FIXME: When adding a prompt get TypeError.
 
 import React from 'react';
@@ -54,7 +53,6 @@ class AddPromptForm extends React.Component {
             })
             .then(responseJson => {
                 this.context.addPrompt(this.state.prompt);
-                this.props.history.push('/');
             })
             .catch(error => {
                 console.log(error)
