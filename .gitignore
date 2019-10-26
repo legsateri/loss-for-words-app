@@ -22,5 +22,5 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# README files
-/screenshots
+#README files
+/screenshots/*
